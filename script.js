@@ -2,6 +2,7 @@
 let messages = "";
 let message = "";
 let language ="";
+let tiShi=0;
 if(confirm("语言设置\nLanguage settings\n\n英文：取消 ， 中文：确定\nEnglish: cancel, Chinese: OK")){
     alert("中文设置成功");
     language = "China";
@@ -20,9 +21,12 @@ if( language === "China"){
             message = name+":"+message;
                     messages = messages+message+'<br>';
                     $(".messages").html(messages);
-                    alert("成功提交")
-
-        }else if(name ==="") {
+                    alert("成功提交");
+                    if(tiShi===0){
+                        alert("提示：点击eric的头像可以查看eric的个人简介\nTip: click Eric's Avatar to view Eric's profile");
+                        tiShi++;
+                    }
+            }else if(name ==="") {
             alert("您未输入您的名字，请在姓名区留下您的姓名")
         }else if(message ===""){
             alert("您未输入您的留言，请在留言去留言，谢谢")
@@ -46,8 +50,11 @@ if( language === "China"){
         message = name+":"+message;
                 messages = messages+message+'<br>';
                 $(".messages").html(messages);
-                alert("Submit successfully")
-
+                alert("Submit successfully");
+                if(tiShi===0){
+                    alert("提示：点击eric的头像可以查看eric的个人简介\nTip: click Eric's Avatar to view Eric's profile");
+                    tiShi++;
+                }
     }else if(name ==="") {
         alert("You have not entered your name, please leave your name in the name area")
     }else if(message ===""){
