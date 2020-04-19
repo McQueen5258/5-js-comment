@@ -1,0 +1,73 @@
+img{
+    width:300px;
+}
+.logo{
+    width:100px;
+}
+input{
+    border-radius: 10px;
+    padding: 5px;
+
+}
+.messages{
+    border: groove grey 2px;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.commentName{
+    display: flex;
+}
+
+button{
+    height: 20px;
+}
+
+p{
+    margin: 5px;
+
+}
+
+.imgAll{
+    width: 10px;
+    margin-left: 50px;
+}
+
+.above{
+    display: flex;
+}
+.Underneath{
+    display: flex;
+
+}
+
+.imgDAxiao{
+    width: 200px;
+    margin: 3px;
+
+    border-radius:0.5%;
+}
+
+.HeadPortrait{
+    width:40px;
+    height: 40px;
+    border-radius:10%;
+}
+
+.touXiangMingZi{
+    display: flex;
+}
+
+.mingCheng{
+    margin-top: -10px;
+    color: #66CCFF;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.dongTai{
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
