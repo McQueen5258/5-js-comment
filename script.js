@@ -47,6 +47,7 @@ if( language === "China"){
         let name =$(".userName").val();
         message =$(".userComment").val();
     if(name !="" && message !=""){
+        
         message = name+":"+message;
                 messages = messages+message+'<br>';
                 $(".messages").html(messages);
